@@ -1,0 +1,23 @@
+# Basic YAML Configuration
+application:
+    name: DevOps Test
+    version: 1.0.0
+    environment: development
+
+database:
+    host: localhost
+    port: 5432
+    username: admin
+    password: secure_password
+
+services:
+    - name: api
+        port: 8080
+        enabled: true
+    - name: worker
+        port: 8081
+        enabled: false
+
+settings:
+    debug: true
+    log_level: info
